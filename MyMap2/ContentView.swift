@@ -19,8 +19,8 @@ struct ContentView: View {
         //垂直にレイアウト（縦方向にレイアウト）
         VStack{
             // テキストフィールド(文字入力)
-            TextField("キーワード", text: $inputText,prompt: Text("キーワードを入力してください"))
-            // 入力が完了された時
+            TextField("キーワード", text: $inputText,prompt: Text("キーワードを入力してください!"))
+            // 入力が完了された時、
                 .onSubmit {
                     // 入力が完了したので検索キーワードに設定する
                     displaySearchKey = inputText
